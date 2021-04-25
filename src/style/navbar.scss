@@ -1,0 +1,61 @@
+@import "./main.scss";
+
+/* hover effect */
+@mixin hover-effect {
+    transition: 0.4s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav {
+    .selected {
+        color: $light-color;
+        background-color: $dark-color;
+    }
+    
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+
+        li {
+            font-weight: 500;
+            letter-spacing: .01vw;
+            text-transform: uppercase;
+            padding: 0 1vw;
+            white-space: nowrap; /*do no delete this property !*/
+            //@include active; // mixin in main.scss
+        } 
+
+        li a {
+            cursor: pointer;
+            @include hover-effect;
+            position: relative;
+            font-size: 1.4vw;
+            padding: 0 .7vw;
+            margin: 0 -.7vw;
+            z-index: 2;
+
+            &:after {
+              content: "";
+              position: absolute;
+              @include hover-effect;
+            }
+
+            &:hover {
+                color: $light-color;
+                background-color: $dark-color;
+            }
+        }
+    }
+}
+
+/* Galaxy note 9 */
+@media screen and (max-width:"847px") { 
+}
+
+/* Galaxy S9 */
+@media screen and (max-width:"740px") { 
+}
+
+/* Galaxie S5 */
+@media screen and (max-width:"640px") {
+}

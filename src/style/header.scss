@@ -1,0 +1,49 @@
+@import "./main.scss";
+
+.header {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 3vw;
+    width: 100vw;
+
+    &--heading {
+        display: flex;
+        align-items: baseline;
+        flex-flow: row nowrap;
+
+        h1 {
+            margin: 0;
+            margin-top: -.5vw;
+            letter-spacing: 0.276vw;
+
+            a {
+                font-size: 5vw;
+            }
+        }
+
+        p {
+            font-size: 1.2vw;
+            letter-spacing: 0.032vw;
+            font-style: oblique;
+            font-family: "Didot", serif;
+        }
+    }
+}
+
+/* Galaxy note 9 */
+@media screen and (max-width:"846px") { 
+}
+
+/* Galaxy S9 */
+@media screen and (max-width:"740px") { 
+}
+
+/* Galaxie S5 */
+@media screen and (max-width:"640px") {
+}
+
+/* Iphone 5 */
+@media screen and (max-width:"568px") {
+}
