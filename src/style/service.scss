@@ -1,0 +1,23 @@
+@import "./main.scss";
+
+.service {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100vw;
+
+    main {
+        margin: auto 10vw ;
+        text-align: left;
+
+        p, h3, ul li {
+            font-family: "AGaramond Bold", serif;
+            font-size: 1.3vw;
+            
+        }
+
+        ul li:before {
+	        content: "- "; /* add a dash before each item */
+        }
+    }
+}

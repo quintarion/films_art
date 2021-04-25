@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `SASS (which stands for Syntactically Awesome Style Sheets) is a pre-processor forthe CSS language`
+npm install --save compile-sass
+
+### `REACT ROUTER`
+npm install --save react-router & npm install react-router-dom

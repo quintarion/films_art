@@ -1,0 +1,47 @@
+@import "./main.scss";
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: calc((100vh/3) - 15vh);
+    max-width: 100vw;
+    max-height: 100vh;
+    grid-template-areas: 
+    "heading heading heading heading"
+    "subtitle paragraph paragraph ."
+    "resume resume resume resume";
+
+    &--header {
+        grid-area: heading;
+    }
+
+    &--paragraph {
+
+        &-subtitle {
+            grid-area: subtitle;
+            text-align: right;
+
+            h2 {
+                line-height: 0.6vw;
+                font-size: 1.55vw;
+            }
+        }
+
+        &-text {
+            grid-area: paragraph;
+
+            p {
+                text-align: justify;
+                font-size: 1.03vw;
+            }
+        }
+    }
+
+    &--portrait {
+        grid-area: resume;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 4vw 5vw;
+    }
+}

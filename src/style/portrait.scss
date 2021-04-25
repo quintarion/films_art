@@ -1,0 +1,54 @@
+@import "./main.scss";
+
+.portrait {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100vw;
+
+    &--text {
+        width: calc(100vw / 6);
+        margin-right: 3.4vw;
+
+        h2 {
+            justify-content: left;
+            font-family:"AGaramond Regular";
+            font-size: 1.3vw;
+            font-weight: 500;
+            letter-spacing: .01vw;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        p, a {
+            margin-top: 2vw;
+            text-align: justify;
+            font-family:"AGaramond Bold";
+            font-size: 1vw;
+            letter-spacing: -0.011vw;
+            line-height: 1.4;
+            font-weight: 600;
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+
+    &--picture {
+        /* crop image 1/2*/
+        width: 15vw;
+        height: 17vw;
+        overflow:hidden;   
+        position:relative;
+
+        img {
+            background-size: cover;
+            height: auto;
+            width: calc(100vw / 7.9);
+            /*crop image 2/2*/
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

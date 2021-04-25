@@ -1,0 +1,24 @@
+@import "./main.scss";
+
+.contact {
+    
+    &--header {
+        position: fixed;
+        top: 0;
+    }
+
+    &--content {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+        width: 100vw;
+        
+        a {
+            margin: auto; /*center an element in a flexbox*/
+            font-size: 1.8vw;
+            font-weight: 600;
+            letter-spacing: 0.008vw;
+            font-family:"AGaramond Bold", serif;
+        }
+    }
+}
