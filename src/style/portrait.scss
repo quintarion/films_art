@@ -52,3 +52,14 @@
         }
     }
 }
+
+/* up to 959px: smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media only screen and (max-width: 959px) {
+    .portrait {
+        margin: 3vw 3vw auto;
+
+        &--picture {
+            margin: 4vw auto 5vw;
+        }
+    }
+}

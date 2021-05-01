@@ -12,9 +12,10 @@ const Home = () => {
                 <Header tagline={tagline} />
             </div>
             <div className="home--video">
-                {/* <textarea></textarea> */}
-                <video src={bandtest} controls preload="auto" loop allowfullscreen>
-                <p>La vidéo n'est pas lue par votre navigateur.</p>
+                <video controls preload="auto" loop allowfullscreen muted>
+                    <source src={bandtest} type="video/mp4"/>
+                    <p>Cette vidéo ne peut être affichée sur votre navigateur Internet.<br/>
+                    Your browser does not support the video tag.</p>
                 </video>
             </div>
         </div>

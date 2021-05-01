@@ -45,3 +45,27 @@
         margin: 4vw 5vw;
     }
 }
+
+/* up to 959px: smartphone in landscape, tablet in portrait and small tablet in landscape */
+@media only screen and (max-width: 959px) {
+    .about {
+        max-height: none;
+
+        &--paragraph {
+
+            &-text {
+                p {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+
+        &--portrait {
+            margin: 5vw auto;
+
+            p {
+                font-size: 1.4vw;
+            }
+        }
+    }
+}

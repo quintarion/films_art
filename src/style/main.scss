@@ -74,7 +74,8 @@ time, mark, audio, video {
   scroll-behavior: smooth; /*Allows to show scrolling effect*/
 }
 
-* {
+/* Universal box sizing */
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -112,8 +113,4 @@ a {
 
 img {
     pointer-events: none;
-}
-
-/* tablet */
-@media only screen and (max-height: 799px) {
 }
