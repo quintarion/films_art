@@ -2,6 +2,7 @@
 
 .App {
   width: 100%; /* DO NOT DELETE */
+  overflow: hidden; /* exceedances will be masked */
 }
 
 /* tablet & mobile device only landscape */
@@ -26,5 +27,12 @@
       font-style: normal;
       font-size: 4.4vw;
     }
+  }
+}
+
+/* delete warning message */
+@media only screen and (orientation: landscape) {
+  #warning {
+    display: none;
   }
 }

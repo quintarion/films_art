@@ -22,7 +22,6 @@
             text-transform: uppercase;
             padding: 0 1vw;
             white-space: nowrap; /*do no delete this property !*/
-            //@include active; // mixin in main.scss
         } 
 
         li a {
@@ -46,16 +45,4 @@
             }
         }
     }
-}
-
-/* Galaxy note 9 */
-@media screen and (max-width:"847px") { 
-}
-
-/* Galaxy S9 */
-@media screen and (max-width:"740px") { 
-}
-
-/* Galaxie S5 */
-@media screen and (max-width:"640px") {
 }
